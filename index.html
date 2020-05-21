@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Verbs</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    </head>
+    <body>
+        <h1>Memory Card Game</h1>
+        <div id="scoreBoard">
+            <h3>Score</h3>
+            Chances: <span id="chances"></span><br>
+            Misses: <span id="misses"></span><br>
+            Hits: <span id="hits"></span>
+        </div>
+        <br><br>
+        <div id="container-base-form" class="scene">
+            <h2>Base Form</h2>
+            <div class="card" data-type="1" data-base-form="take" data-verb-tense="take" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">take</span></div>
+            </div>
+            <div class="card" data-type="1" data-base-form="grow" data-verb-tense="grow" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">grow</span></div>
+            </div>
+            <div class="card" data-type="1" data-base-form="know" data-verb-tense="know" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">know</span></div>
+            </div>
+            <div class="card" data-type="1" data-base-form="fall" data-verb-tense="fall" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">fall</span></div>
+            </div>
+            <div class="card" data-type="1" data-base-form="give" data-verb-tense="give" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">give</span></div>
+            </div>
+            <div class="card" data-type="1" data-base-form="ride" data-verb-tense="ride" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">ride</span></div>
+            </div>
+            <div class="card" data-type="1" data-base-form="fly" data-verb-tense="fly" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">fly</span></div>
+            </div>
+            <div class="card" data-type="1" data-base-form="choose" data-verb-tense="choose" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">choose</span></div>
+            </div>
+            <div class="card" data-type="1" data-base-form="drink" data-verb-tense="drink" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">drink</span></div>
+            </div>
+        </div>
+        <!-- ////////////// -->
+
+        <div id="container-past-tense" class="scene">
+            <h2>Past Tense</h2>
+            <div class="card" data-type="2" data-base-form="take" data-verb-tense="took" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">took</span></div>
+            </div>
+            <div class="card" data-type="2" data-base-form="grow" data-verb-tense="grew" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">grew</span></div>
+            </div>
+            <div class="card" data-type="2" data-base-form="know" data-verb-tense="knew" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">knew</span></div>
+            </div>
+            <div class="card" data-type="2" data-base-form="fall" data-verb-tense="fell" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">fell</span></div>
+            </div>
+            <div class="card" data-type="2" data-base-form="give" data-verb-tense="gave" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">gave</span></div>
+            </div>
+            <div class="card" data-type="2" data-base-form="ride" data-verb-tense="rode" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">rode</span></div>
+            </div>
+            <div class="card" data-type="2" data-base-form="fly" data-verb-tense="flew" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">flew</span></div>
+            </div>
+            <div class="card" data-type="2" data-base-form="choose" data-verb-tense="chose" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">chose</span></div>
+            </div>
+            <div class="card" data-type="2" data-base-form="drink" data-verb-tense="drank" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">drank</span></div>
+            </div>
+        </div>
+        <!-- ////////////// -->
+
+        <div id="container-past-participle" class="scene">
+            <h2>Past Participle</h2>
+            <div class="card" data-type="3" data-base-form="take" data-verb-tense="taken" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">taken</span></div>
+            </div>
+            <div class="card" data-type="3" data-base-form="grow" data-verb-tense="grown" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">grown</span></div>
+            </div>
+            <div class="card" data-type="3" data-base-form="know" data-verb-tense="known" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">known</span></div>
+            </div>
+            <div class="card" data-type="3" data-base-form="fall" data-verb-tense="fallen" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">fallen</span></div>
+            </div>
+            <div class="card" data-type="3" data-base-form="give" data-verb-tense="given" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">given</span></div>
+            </div>
+            <div class="card" data-type="3" data-base-form="ride" data-verb-tense="ridden" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">ridden</span></div>
+            </div>
+            <div class="card" data-type="3" data-base-form="fly" data-verb-tense="flown" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">flown</span></div>
+            </div>
+            <div class="card" data-type="3" data-base-form="choose" data-verb-tense="chosen" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">chosen</span></div>
+            </div>
+            <div class="card" data-type="3" data-base-form="drink" data-verb-tense="drunk" onclick="index.flipCard(this);" ontouch="index.flipCard(this);">
+                <div class="card-front"></div>
+                <div class="card-back"><span class="verb">drunk</span></div>
+            </div>
+        </div>
+        <audio id="audio">
+            <source src="assets/cards/take/take.mp3" type="audio/mp3" />
+        </audio>
+
+        <script src="plugins/jquery/jquery.min.js"></script>
+        <script src="assets/js/index.js?v=0.0.2"></script>
+    </body>
+</html>
